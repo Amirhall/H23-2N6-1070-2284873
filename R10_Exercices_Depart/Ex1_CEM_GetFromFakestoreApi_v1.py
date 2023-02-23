@@ -1,3 +1,6 @@
+
+from argparse import MetavarTypeHelpFormatter
+import re
 import requests
 import json
 
@@ -20,10 +23,18 @@ base_url="https://fakestoreapi.com"
 
 #   La fonction doit retourner les carts obtenu avec la requête get du site webs. Mais seulement si le nombre de carts demandés est entre 1 et 10
 
-
-
-
-
+def request_carts(nbcart = 0):
+    rep = requests.get(f"{base_url}/carts?limit={nbcart}")
+    rep2 = rep.json()
+    return rep2
+    
+if request_carts() is None:
+    print("il faut preciser le nombre de cart")
+elif request_carts < 1 and request_carts() > 10:
+    print(f"il faut entre 1 et 10 carts et non {request_carts()}")
+elif type(request_carts()) != int:
+    print("il faut entrer un nombre entre 1 et 10")
+request_carts()
 
 # Q2 Écrivez une fonction appelée request_products qui aura 1 paramètre
 #   soit le nombre de produits que vous voulez aller chercher
