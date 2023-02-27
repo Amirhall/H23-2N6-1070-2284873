@@ -1,4 +1,5 @@
-import os
+import os, requests
+from urllib import request
 os.chdir(os.path.dirname(__file__)) # Cette ligne fait que l'exécution du script aura toujours lieu dans le répertoire où il se trouve.
 
 # Maintenant que nous avons un script capable de lire et décoder le fichier csv.
@@ -7,8 +8,9 @@ os.chdir(os.path.dirname(__file__)) # Cette ligne fait que l'exécution du scrip
 
 # Les informations sur les produits proviennent du site du magasin.
 # Vous devez aller chercher les informations à l'aide du module requests.
-url = "https://fakestoreapi.com/"
-
+url = "https://fakestoreapi.com/products"
+Products = requests.get(url)
+print(Products.text)
 
 
 

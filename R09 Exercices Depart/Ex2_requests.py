@@ -48,7 +48,7 @@ liste_produits = dict_resultat["data"]
 
 
 liste_produits = dict_resultat["data"]
-
+print(liste_produits)
 
 total_prix = 0
 cpt_produits_dans_categorie3 = 0
