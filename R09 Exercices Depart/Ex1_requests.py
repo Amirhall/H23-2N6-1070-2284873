@@ -104,12 +104,5 @@ dict_resultat = json.loads(resultat)
 
 liste_produits = dict_resultat["data"]
 
-total_prix = 0
-cpt_produits_dans_categorie3 = 0
-for produit in liste_produits:
-    if (3 in produit["categories"] and prix<100000):
-        total_prix += prix
-        cpt_produits_dans_categorie3 += 1
-moyenne = total_prix /  cpt_produits_dans_categorie3
-print(f"Parmi les 25 produits que j'ai obtenu, il y a {cpt_produits_dans_categorie3} produits dans la catégorie 3 et leur prix moyen est de  {round(moyenne,2)}")
+print(liste_produits)
 
