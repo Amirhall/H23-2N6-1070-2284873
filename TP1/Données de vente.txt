@@ -1,5 +1,24 @@
 Nombre total d'articles vendus: 5905 
-Montant total des ventes: 573500000000000000000000017246
-Prix moyen des commandes: 9.712108382726503e+25
-Personne ayant fait la commande la plus élevée avec le montant de la commande: Lemieux Alain
+Montant total des ventes: 923328 $
+Prix moyen des commandes: 156.36 $
+Personne ayant fait la commande la plus élevée avec le montant de la commande: Martineau Simone
 Personne ayant fait la commande la moins élevée avec le montant de la commande: Lemieux Alain
+
+Par Catégorie: 
+
+Man's Clothings: 
+Nombre total d'articles vendus: 120 
+Montant total des ventes: 61226 $
+
+Woman's Clothing
+Nombre total d'articles vendus: 180 
+Montant total des ventes: 44672 $
+
+Jewlery
+Nombre total d'articles vendus: 120 
+Montant total des ventes: 234428 $
+
+Electronics
+Nombre total d'articles vendus: 180 
+Montant total des ventes: 583002 $
+
