@@ -1,0 +1,5 @@
+Nombre total d'articles vendus: 5905 
+Montant total des ventes: 573500000000000000000000017246
+Prix moyen des commandes: 9.712108382726503e+25
+Personne ayant fait la commande la plus élevée avec le montant de la commande: Lemieux Alain
+Personne ayant fait la commande la moins élevée avec le montant de la commande: Lemieux Alain

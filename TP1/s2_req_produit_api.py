@@ -13,13 +13,19 @@ os.chdir(os.path.dirname(__file__)) # Cette ligne fait que l'exécution du scrip
 
 # Les informations sur les produits proviennent du site du magasin.
 # Vous devez aller chercher les informations à l'aide du module requests.
+
 listes1 = s1_lire_csv_ventes.liste1
 url = requests.get("https://fakestoreapi.com/products")
 productdumps = json.dumps(url.json(),indent=4)
 ProductsInfo = json.loads(productdumps)
 for dico in listes1:
-    for Product in dico:
-        commande = Product[3]
-        sdfsd = {}
+    commande = dico["commande"]
+    for orders in commande:
+        for catalog in ProductsInfo:
+            if catalog["id"] == orders["ProductId"]:
+                orders.update({"price": catalog["price"], "category" : catalog["category"]})
+
+                
 
 
+print(listes1)
